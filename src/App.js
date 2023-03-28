@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Components/Nav';
-import About from './Components/About';
+import About from './Pages/About';
+import Portfolio from './Pages/Portfolio';
 import { createTheme, ThemeProvider } from '@mui/material';
 
 const theme = createTheme({
@@ -14,6 +15,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Nav />
       <About />
+      <Portfolio />
     </ThemeProvider>
   );
 }

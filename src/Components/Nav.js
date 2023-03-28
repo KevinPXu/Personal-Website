@@ -20,11 +20,13 @@ function Nav() {
             About Me
           </Button>
           <Button
+            href='#Portfolio'
             variant='text'
             sx={{ color: 'white' }}>
             Portfolio
           </Button>
           <Button
+            href='#Contact'
             variant='text'
             sx={{ color: 'white' }}>
             Contact Me

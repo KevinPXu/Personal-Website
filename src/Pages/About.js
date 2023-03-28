@@ -1,18 +1,19 @@
-import { Avatar, Grid, Typography } from '@mui/material';
+import { Avatar, Divider, Grid, Typography } from '@mui/material';
 import ProfilePic from '../../src/Assets/images/ProfilePic.jpg';
 import React from 'react';
 
 function About() {
   return (
-    <div id='About'>
-      <Typography
-        variant='h2'
-        component='h2'
-        align='center'
-        my={5}
-        ml={10}>
+    <div
+      style={{ height: '100vh' }}
+      id='About'>
+      <Divider
+        color='#9E6328'
+        variant='inset'
+        //style={{ background: '#9E6328' }}
+        textAlign='left'>
         About Me
-      </Typography>
+      </Divider>
       <Grid
         container
         my={5}
@@ -28,7 +29,8 @@ function About() {
             component='p'>
             Hi! My name is Kevin Xu, I gradusted from University of Miami with a
             Bachelors in Health Science. I deeply care about helping others and
-            I have decided to pursue that through the use of technology. My interest was first piqued 
+            I have decided to pursue that through the use of technology. My
+            interest was first piqued
           </Typography>
         </Grid>
         <Grid xs={4}>
