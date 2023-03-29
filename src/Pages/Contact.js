@@ -24,21 +24,21 @@ function Contact() {
           <FontAwesomeIcon
             icon={faSitemap}
             size='3x'
-            style={{ padding: '60px' }}
+            style={{ padding: '40px' }}
           />
         </IconButton>
         <IconButton href='https://github.com/KevinPXu'>
           <FontAwesomeIcon
             icon={faLaptopCode}
             size='3x'
-            style={{ padding: '60px' }}
+            style={{ padding: '40px' }}
           />
         </IconButton>
         <IconButton>
           <FontAwesomeIcon
             icon={faEnvelope}
             size='3x'
-            style={{ padding: '60px' }}
+            style={{ padding: '40px' }}
           />
         </IconButton>
       </Box>

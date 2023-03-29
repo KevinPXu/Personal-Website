@@ -6,7 +6,8 @@ function About() {
   return (
     <div
       style={{ height: '100vh' }}
-      id='About'>
+      id='About'
+      className='container'>
       <Divider
         color='#9E6328'
         variant='inset'
@@ -27,7 +28,7 @@ function About() {
             mx={8}
             variant='p'
             component='p'>
-            Hi! My name is Kevin Xu, I gradusted from University of Miami with a
+            Hi! My name is Kevin Xu, I graduated from University of Miami with a
             Bachelors in Health Science. I deeply care about helping others and
             I have decided to pursue that through the use of technology. My
             interest was first piqued
