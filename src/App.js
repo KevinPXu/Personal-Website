@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './Components/Nav';
 import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
+import Contact from './Pages/Contact';
 import { createTheme, ThemeProvider } from '@mui/material';
 
 const theme = createTheme({
@@ -16,6 +17,7 @@ function App() {
       <Nav />
       <About />
       <Portfolio />
+      <Contact />
     </ThemeProvider>
   );
 }
