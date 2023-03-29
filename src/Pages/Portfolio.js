@@ -1,19 +1,14 @@
 import React from 'react';
-import { Divider, Grid } from '@mui/material';
+import { Box, Divider, Grid } from '@mui/material';
 import { projectList } from '../data';
 
 function Portfolio() {
   return (
-    <div
+    <Box
       id='Portfolio'
-      style={{ height: '100vh' }}>
-      <Divider
-        color='#9E6328'
-        variant='inset'
-        //style={{ background: '#9E6328' }}
-        textAlign='left'>
-        Portfolio
-      </Divider>
+      style={{ height: '100vh' }}
+      sx={{ display: 'flex', flexWrap: 'wrap' }}>
+      <Divider textAlign='left'>Portfolio</Divider>
       <Grid
         container
         m={2}>
@@ -21,7 +16,7 @@ function Portfolio() {
           <Grid key={item.id}>hello {item.id}</Grid>
         ))}
       </Grid>
-    </div>
+    </Box>
   );
 }
 
