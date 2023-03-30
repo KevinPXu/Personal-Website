@@ -4,6 +4,7 @@ import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
 import { createTheme, ThemeProvider } from '@mui/material';
+import "./Assets/Styles.css";
 
 const theme = createTheme({
   typography: {
