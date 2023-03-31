@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function Card({ title, url, description }) {
   return (
@@ -9,15 +11,11 @@ function Card({ title, url, description }) {
       <div className='details'>
         <div className='center'>
           <h1>{title}</h1>
-          <p>
-            {description}
-          </p>
+          <p>{description}</p>
           <ul>
             <li>
               <a href={url}>
-                <i
-                  className='fa fa-facebook'
-                  aria-hidden='true'></i>
+                Continue to App  <FontAwesomeIcon icon={faArrowRight}/>
               </a>
             </li>
           </ul>
