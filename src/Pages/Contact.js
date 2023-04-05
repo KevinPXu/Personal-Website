@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, IconButton } from '@mui/material';
+import { IconButton } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
@@ -7,37 +7,45 @@ import {
   faSitemap,
 } from '@fortawesome/free-solid-svg-icons';
 import { Box } from '@mui/system';
+import WavesOpacity from '../Assets/images/wavesOpacity.svg';
 
 function Contact() {
   return (
     <div
       id='Contact'
-      style={{ height: '20vh' }}>
-      <Divider
-        color='#9E6328'
-        variant='inset'
-        textAlign='left'>
-        Contact
-      </Divider>
-      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+      style={{
+        backgroundImage: `url(${WavesOpacity})`,
+        transform: `rotateX(180deg)`,
+        height: '30vh',
+      }}>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          gap: '5px',
+        }}
+        style={{ transform: `rotateX(180deg)` }}>
         <IconButton href='https://www.linkedin.com/in/kevin-xu98/'>
           <FontAwesomeIcon
             icon={faSitemap}
-            size='3x'
+            size='2x'
+            color='white'
             style={{ padding: '40px' }}
           />
         </IconButton>
         <IconButton href='https://github.com/KevinPXu'>
           <FontAwesomeIcon
             icon={faLaptopCode}
-            size='3x'
+            size='2x'
+            color='white'
             style={{ padding: '40px' }}
           />
         </IconButton>
         <IconButton>
           <FontAwesomeIcon
             icon={faEnvelope}
-            size='3x'
+            size='2x'
+            color='white'
             style={{ padding: '40px' }}
           />
         </IconButton>

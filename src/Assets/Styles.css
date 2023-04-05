@@ -83,7 +83,13 @@ p {
   text-align: center;
   text-decoration: none;
   transform: 0.5s;
+  border-radius: 20px;
 }
 .card .details .center ul li a:hover {
   background: #ff3636;
+}
+
+.contactContainer {
+  background-image: url(./images/wavesOpacity.svg);
+  transform:scaleX(-1);
 }
