@@ -5,7 +5,7 @@ import ProfilePic from '../../src/Assets/images/ProfilePic.jpg';
 function Nav() {
   return (
     <AppBar
-      position='static'
+      position="sticky"
       sx={{ bgcolor: '#0D1D1A' }}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>

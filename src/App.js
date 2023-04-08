@@ -3,6 +3,7 @@ import Nav from './Components/Nav';
 import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
+import LandingPage from './Pages/LandingPage';
 import { createTheme, ThemeProvider } from '@mui/material';
 import "./Assets/Styles.css";
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Nav />
+      <LandingPage />
       <About />
       <Portfolio />
       <Contact />

@@ -10,11 +10,11 @@ function Card({ title, url, description }) {
       </div>
       <div className='details'>
         <div className='center'>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <ul>
-            <li>
-              <a href={url}>
+          <h1 className='cardHeader'>{title}</h1>
+          <p className='cardDescription'>{description}</p>
+          <ul className='cardUl'>
+            <li className='cardLi'>
+              <a className='cardBtn' href={url}>
                 Continue to App  <FontAwesomeIcon icon={faArrowRight}/>
               </a>
             </li>
