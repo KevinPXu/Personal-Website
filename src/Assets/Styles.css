@@ -6,6 +6,27 @@ body {
   background-color: black;
 }
 
+.LandingContainer {
+  height: 100vh;
+  background-image: url('./images/parallaxbg.png');
+  background-size: cover;
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+}
+
+.landingHeader {
+  position: relative;
+  top: 35%;
+  z-index: 1;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10vw;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -24,10 +45,6 @@ body {
   background-color: #0b1b2c;
 }
 
-.landingHeader {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10vw;
-}
 .card {
   position: relative;
   top: 50%;
