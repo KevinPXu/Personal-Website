@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Divider, Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import { projectList } from '../data';
 import Card from '../Components/Card';
 
@@ -8,7 +8,6 @@ function Portfolio() {
     <Box
       id='Portfolio'
       sx={{ display: 'flex', flexWrap: 'wrap' }}>
-      <Divider textAlign='left'>Portfolio</Divider>
       <Grid
         container
         spacing={2}>

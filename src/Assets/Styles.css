@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Sans+JP:wght@100&family=Silkscreen&display=swap');
 
+body {
+  overflow-y: scroll;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+
 .landingHeader {
   font-family: 'Montserrat', sans-serif;
   font-size: 10vw;
