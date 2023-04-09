@@ -20,6 +20,7 @@ function About() {
         my={5}
         spacing={1}>
         <Grid
+          item
           xs={8}
           display='flex'
           justifyContent='center'
@@ -34,7 +35,9 @@ function About() {
             interest was first piqued
           </Typography>
         </Grid>
-        <Grid xs={4}>
+        <Grid
+          item
+          xs={4}>
           <Avatar
             sx={{ width: 250, height: 250 }}
             src={ProfilePic}></Avatar>

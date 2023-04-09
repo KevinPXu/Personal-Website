@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Sans+JP:wght@100&family=Silkscreen&display=swap');
+
+.landingHeader {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10vw;
+}
 .card {
   position: relative;
   top: 50%;
@@ -51,7 +57,7 @@
   font-size: 20px;
   text-transform: uppercase;
 }
-.card .details .center .cardHeader span{
+.card .details .center .cardHeader span {
   font-size: 14px;
   color: #262626;
 }

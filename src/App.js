@@ -1,11 +1,13 @@
 import React from 'react';
-import Nav from './Components/Nav';
+//import Nav from './Components/Nav';
 import About from './Pages/About';
 import Portfolio from './Pages/Portfolio';
 import Contact from './Pages/Contact';
 import LandingPage from './Pages/LandingPage';
 import { createTheme, ThemeProvider } from '@mui/material';
-import "./Assets/Styles.css";
+import './Assets/Styles.css';
+import NavMenu from './Components/NavMenu';
+//import NavMenu from './Components/NavMenu';
 
 const theme = createTheme({
   typography: {
@@ -16,7 +18,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Nav />
+      <NavMenu />
       <LandingPage />
       <About />
       <Portfolio />
