@@ -16,7 +16,7 @@ function Contact() {
       style={{
         backgroundImage: `url(${WavesOpacity})`,
         transform: `rotateX(180deg)`,
-        height: '30vh',
+        height: '100vh',
       }}>
       <Box
         sx={{

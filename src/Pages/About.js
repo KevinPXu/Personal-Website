@@ -12,10 +12,19 @@ function About() {
         <h1 className='aboutHeader'>About Me</h1>
       </div>
       <p className='aboutText'>
-        Hi! My name is Kevin Xu, I graduated from University of Miami with a
-        Bachelors in Health Science. I deeply care about helping others and I
-        have decided to pursue that through the use of technology. My interest
-        was first piqued
+        I&apos;m Kevin Xu, a junior software engineer with experience in
+        HTML/CSS/JavaScript, Node.js/Express.js, React, Java/Python, RESTful
+        API, MySql/MongoDB, and Apollo/GraphQL. I recently completed a Full
+        Stack Developer Bootcamp at UC Berkeley Extension and hold a Bachelor of
+        Science in Health Sciences with minors in Computer Science from the
+        University of Miami. In addition to my technical skills, I have
+        experience in leadership and teamwork roles as a Scribe/Ambassador for
+        Scribe America and a Homecoming Vice Chair/Committee Member at the
+        University of Miami. I&apos;m passionate about working in the tech
+        industry and have completed various projects, such as a weather
+        application, a chat application, a blog site, and a CLI. Feel free to
+        check out my work on GitHub or you can contact me using the buttons
+        below!
       </p>
 
       <Avatar

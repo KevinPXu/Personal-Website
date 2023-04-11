@@ -21,6 +21,7 @@ function Portfolio() {
               title={item.title}
               description={item.description}
               url={item.url}
+              imageURL={item.imageURL}
             />
           </Grid>
         ))}
