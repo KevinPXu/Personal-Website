@@ -7,7 +7,7 @@ import LandingPage from './Pages/LandingPage';
 import { createTheme, ThemeProvider } from '@mui/material';
 import './Assets/Styles.css';
 import NavMenu from './Components/NavMenu';
-//import NavMenu from './Components/NavMenu';
+
 
 const theme = createTheme({
   typography: {

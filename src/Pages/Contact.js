@@ -1,30 +1,25 @@
 import React from 'react';
 import { IconButton } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faEnvelope,
-  faLaptopCode,
-  faSitemap,
-} from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faSitemap } from '@fortawesome/free-solid-svg-icons';
 import { Box } from '@mui/system';
-import WavesOpacity from '../Assets/images/wavesOpacity.svg';
+import Mail from '../Components/Mail.js';
+//import WavesOpacity from '../Assets/images/wavesOpacity.svg';
 
 function Contact() {
   return (
     <div
       id='Contact'
       style={{
-        backgroundImage: `url(${WavesOpacity})`,
-        transform: `rotateX(180deg)`,
         height: '100vh',
       }}>
+      <h1 className='contactHeader'>Contact Me</h1>
       <Box
         sx={{
           display: 'flex',
           justifyContent: 'flex-end',
           gap: '5px',
-        }}
-        style={{ transform: `rotateX(180deg)` }}>
+        }}>
         <IconButton href='https://www.linkedin.com/in/kevin-xu98/'>
           <FontAwesomeIcon
             icon={faSitemap}
@@ -41,14 +36,7 @@ function Contact() {
             style={{ padding: '40px' }}
           />
         </IconButton>
-        <IconButton>
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            size='2x'
-            color='white'
-            style={{ padding: '40px' }}
-          />
-        </IconButton>
+        <Mail />
       </Box>
     </div>
   );

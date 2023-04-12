@@ -30,8 +30,8 @@ const NavMenu = () => {
           src={ProfilePic}
           alt='My Icon'
           style={{
-            width: '2.5em',
-            height: '2.5em',
+            width: '2em',
+            height: '2em',
             borderRadius: '50%',
             objectFit: 'cover',
           }}
