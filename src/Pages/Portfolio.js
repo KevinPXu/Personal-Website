@@ -1,13 +1,11 @@
 import React from 'react';
-import { Box, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import { projectList } from '../data';
 import Card from '../Components/Card';
 
 function Portfolio() {
   return (
-    <Box
-      id='Portfolio'
-      sx={{ display: 'flex', flexWrap: 'wrap' }}>
+    <div id='Portfolio'>
       <Grid
         container
         spacing={2}>
@@ -26,7 +24,7 @@ function Portfolio() {
           </Grid>
         ))}
       </Grid>
-    </Box>
+    </div>
   );
 }
 

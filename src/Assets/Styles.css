@@ -72,6 +72,18 @@ body {
   color: white;
 }
 
+.portfolioHeader {
+  font-family: var(--header-font);
+  font-size: 8vw;
+  position: absolute;
+  top: 210%;
+  left: 10%;
+  background-image: url(./images/parallaxbg.png);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .card {
   position: relative;
   top: 50%;
@@ -173,11 +185,6 @@ p {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-
-.contactContainer {
-  background-image: url(./images/wavesOpacity.svg);
-  transform: scaleX(-1);
 }
 
 input,
