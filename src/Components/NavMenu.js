@@ -1,10 +1,7 @@
 import React from 'react';
-//import Button from '@material-ui/core/Button';
-//import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import ProfilePic from '../../src/Assets/images/ProfilePic.jpg';
-//import HomeIcon from '@material-ui/icons/Home';
-//import MenuIcon from '@material-ui/icons/Menu';
+
 
 const NavMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -21,7 +18,7 @@ const NavMenu = () => {
     <div>
       <IconButton
         sx={{
-          position: 'fixed',
+          position: 'absolute',
           top: '10px',
           right: '10px',
         }}

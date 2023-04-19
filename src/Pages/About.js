@@ -34,8 +34,14 @@ function About() {
           </h1>
         </div>
       ) : (
-        <div className='aboutHeaderContainer'>
-          <h1 className='aboutHeader'>About Me</h1>
+        <div
+          className='aboutHeaderContainer'
+          style={{ width: '50%' }}>
+          <h1
+            className='aboutHeader'
+            >
+            About Me
+          </h1>
         </div>
       )}
 
