@@ -4,6 +4,14 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import React from 'react';
 
+const bioParagraphs = [
+  "I am a driven and innovative junior software engineer currently pursuing a Master's degree in Computer Science at Northeastern University. My background includes a Bachelor of Science in Health Sciences with a minor in Computer Science from the University of Miami and a Full Stack Development Certificate from the University of California, Berkeley.",
+  'With a solid foundation in HTML/CSS, JavaScript/TypeScript, Node.js, React, Java, Python, and database management using MySQL and MongoDB, I excel in developing full-stack applications. I am proficient in RESTful API design and have experience with modern technologies such as Apollo/GraphQL.',
+  'My projects range from a fitness tracking mobile app leveraging Android Studio to an AI agent for playing complex games using Python and Pytorch. These experiences highlight my ability to combine deep technical skills with user-centric design.',
+  'In addition to technical expertise, I bring strong leadership and teamwork skills, honed through roles such as a Homecoming Vice Chair at the University of Miami and a Scribe/Ambassador at Scribe America. My passion for technology drives me to continuously learn and contribute to the tech industry.',
+  'Feel free to explore my projects on GitHub or connect with me on LinkedIn.',
+];
+
 function About() {
   const theme = useTheme();
   const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
@@ -45,41 +53,21 @@ function About() {
         </div>
       )}
 
-      {isMdScreen ? (
-        <p
-          className='aboutText'
-          style={{ width: '80vw' }}>
-          I&apos;m Kevin Xu, a junior software engineer with experience in
-          HTML/CSS/JavaScript, Node.js/Express.js, React, Java/Python, RESTful
-          API, MySql/MongoDB, and Apollo/GraphQL. I recently completed a Full
-          Stack Developer Bootcamp at UC Berkeley Extension and hold a Bachelor
-          of Science in Health Sciences with minors in Computer Science from the
-          University of Miami. In addition to my technical skills, I have
-          experience in leadership and teamwork roles as a Scribe/Ambassador for
-          Scribe America and a Homecoming Vice Chair/Committee Member at the
-          University of Miami. I&apos;m passionate about working in the tech
-          industry and have completed various projects, such as a weather
-          application, a chat application, a blog site, and a CLI. Feel free to
-          check out my work on GitHub or you can contact me using the buttons
-          below!
-        </p>
-      ) : (
-        <p className='aboutText'>
-          I&apos;m Kevin Xu, a junior software engineer with experience in
-          HTML/CSS/JavaScript, Node.js/Express.js, React, Java/Python, RESTful
-          API, MySql/MongoDB, and Apollo/GraphQL. I recently completed a Full
-          Stack Developer Bootcamp at UC Berkeley Extension and hold a Bachelor
-          of Science in Health Sciences with minors in Computer Science from the
-          University of Miami. In addition to my technical skills, I have
-          experience in leadership and teamwork roles as a Scribe/Ambassador for
-          Scribe America and a Homecoming Vice Chair/Committee Member at the
-          University of Miami. I&apos;m passionate about working in the tech
-          industry and have completed various projects, such as a weather
-          application, a chat application, a blog site, and a CLI. Feel free to
-          check out my work on GitHub or you can contact me using the buttons
-          below!
-        </p>
-      )}
+      <div
+        className='aboutText'
+        style={{
+          width: isMdScreen ? '80vw' : '60%',
+          height: 'auto',
+          lineHeight: 1.6,
+          textAlign: 'justify',
+          padding: '20px',
+        }}>
+        {bioParagraphs.map((text, i) => (
+          <p key={i} style={{ marginBottom: '1em' }}>
+            {text}
+          </p>
+        ))}
+      </div>
 
       {isMdScreen ? (
         <Avatar
