@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconButton, SvgIcon } from '@mui/material';
 import { Box } from '@mui/system';
-import Mail from '../Components/Mail.js';
+import Mail from '../Components/Mail.jsx';
 
 function Contact() {
   return (
